@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Accessibilty</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/modules.css" rel="stylesheet">
+</head>
+<body>
+
+  <ul>
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="nav">Jump to navigaton</a></li>
+  </ul>
+
+  <header role="banner">
+    <h1>Pangolin</h1>
+    <nav role="navigation" id="nav" tabindex="0">
+      <ul>
+        <li><a href="#description">Description</a></li>
+        <li><a href="#behaviour">Behaviour</a></li>
+        <li><a href="#conversation">Conversation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main" id="main" tabindex="0">
+    <img src="images/map.jpg" alt="" aria-details="countries">
+    <section id="description" tabindex="0">
+      <h2 >Description</h2>
+    </section>
+
+    <div id="countries">
+      <h3>some countries where pangolins are found</h3>
+      <ol>
+        <li>Botswana</li>
+        <li>Kenya</li>
+        <li>Mozambique</li>
+        <li>Nambia</li>
+        <li>South Africa</li>
+        <li>Tanzania</li>
+        <li>Uganada</li>
+        <li>Zambia</li>
+        <li>Zimbabwe</li>
+      </ol>
+    </div>
+
+    <section id="behaviour" tabindex="0">
+      <h2 >Behaviour</h2>
+      <a href="https://en.wikipedia.org.wiki/Pangolin#Behavior" aria-label="Read more about Pangolin behavior">Read more</a>
+    </section>
+
+    <section id="conversation" tabindex="0">
+      <h2>Conversation</h2>
+      <a href="https://en.wikipedia.org.wiki/Pangolin#Conversation" aria-label="Read more about Pangolin conversation">Read more</a>
+
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <small>1821 Pangolin</small>
+  </footer>
+
+</body>
+</html>
